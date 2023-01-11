@@ -4,7 +4,7 @@ import java.util.List;
 class Buyer {
     private String id;
     private String name;
-    private String address;
+    private String address; // comment
     private String email;
     private String phoneNumber;
     private List<Transaction> transactions;
