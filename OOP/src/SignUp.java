@@ -11,10 +11,8 @@ public class SignUp {
 
     private Scanner input;
 
-    public SignUp(){
-        this(1);
-    }
-    public SignUp(int type){
+
+    public void createAccount(int type){
         if( type == 1 || type == 2){
             this.type = type;
             input = new Scanner(System.in);

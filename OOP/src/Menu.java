@@ -1,8 +1,10 @@
-public class Menu {
+import java.util.Scanner;
 
+public class Menu {
+    private static Scanner scanner = new Scanner(System.in);
     public static void welcomeMenu() {
         while(true){
-            System.out.println("Welcome to the GM!");
+            System.out.println("Welcome to the Grain Market and Delivery System");
             System.out.println(" >> I'm a.");
             System.out.println("1. Buyer");
             System.out.println("2. Seller");
@@ -10,7 +12,7 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Please enter your choice: ");
 
-            int choice = Integer.parseInt(System.console().readLine());
+            int choice = scanner.nextInt();
 
             switch (choice) {
             case 1:
@@ -40,22 +42,20 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Please enter your choice: ");
 
-            choice = Integer.parseInt(System.console().readLine());
+            choice = scanner.nextInt();
 
             switch (choice) {
-            case 1:
-                LogIn login = new LogIn(userType);
-                response = login.verifyPassword();
-                break;
-            case 2:
-                // SignUp signup = new SignUp(userType);
-                break;
-            case 0:
-                System.exit(0);
-                break;
-            default:
-                System.out.println("Invalid choice");
-                break;}
+                case 1 -> {
+                    LogIn login = new LogIn(userType);
+                    response = login.verifyPassword();
+                }
+                case 2 -> {
+                    SignUp signup = new SignUp();
+                    signup.createAccount(userType);
+                }
+                case 0 -> System.exit(0);
+                default -> System.out.println("Invalid choice");
+            }
         }while(!response);
         
         return response;
@@ -81,7 +81,7 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Please enter your choice: ");
 
-            int choice = Integer.parseInt(System.console().readLine());
+            int choice = scanner.nextInt();
 
             switch (choice) {
             case 1:
@@ -111,7 +111,7 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Please enter your choice: ");
 
-            int choice = Integer.parseInt(System.console().readLine());
+            int choice = scanner.nextInt();
 
             switch (choice) {
             case 1:
@@ -141,7 +141,7 @@ public class Menu {
             System.out.println("0. Exit");
             System.out.println("Please enter your choice: ");
 
-            int choice = Integer.parseInt(System.console().readLine());
+            int choice = scanner.nextInt();
 
             switch (choice) {
             case 1:
