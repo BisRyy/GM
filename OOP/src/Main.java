@@ -2,8 +2,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        WelcomeMenu.welcomeMenu();
-
+        MainMenu.menu();
 
 //        Seller abebe =  new Seller("001", "Abebe", "AASTU 101 road", "Abe@abebe.com","+2519555555");
 //

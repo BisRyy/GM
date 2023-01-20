@@ -1,37 +1,21 @@
 import java.util.Scanner;
 
-public class LogIn {
-    private int type;
-    private String id;
-    private String password;
-    private final Scanner input = new Scanner(System.in);
+public abstract class LogIn {
+    public String id;
+    public String password;
+    public final Scanner input = new Scanner(System.in);
 
-
-    LogIn(){
-        type = 1;
-        getID();
-        getPassword();
-    }
-
-    LogIn(int type){
-        getID();
-        getPassword();
-    }
-    LogIn(int type, String id){
-        getPassword();
-    }
-
-    private void getID() {
+    public void getID() {
         System.out.println("Enter your ID: ");
         id = input.nextLine();
     }
 
-    private void getPassword(){
+    public void getPassword(){
         System.out.println("Enter your Password: ");
         password = input.nextLine();
     }
 
-    boolean verifyPassword(){
+    public boolean verifyPassword(){
         return true;
     }
 }

@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class AdminMenu {
-    private static Scanner scanner = new Scanner(System.in);
-    public static void adminMenu(){
+    private final Scanner scanner = new Scanner(System.in);
+    public void adminMenu(){
         while(true){
             System.out.println("Welcome to the GM!");
             System.out.println("1. Add User");

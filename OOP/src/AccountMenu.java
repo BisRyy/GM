@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class AccountMenu {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
+    static int choice;
 
-    public static boolean accountMenu(int userType) {
-        int choice;
+    public static int menuChoice(int userType) {
         boolean response = false;
 
         System.out.println("Welcome to the GM!");
@@ -15,29 +15,12 @@ public class AccountMenu {
 
         choice = scanner.nextInt();
 
-        switch (choice) {
-            case 1 -> {
-                return  logIn(userType);
-            }
-            case 2 -> {
-                return signUp(userType);
-            }
-            case 0 -> System.exit(0);
-            default -> System.out.println("Invalid choice");
-        }
-
-        return response;
+        return choice;
     }
 
-    public static boolean logIn(int userType){
-        LogIn login = new LogIn(userType);
-
-        return login.verifyPassword();
-    }
-
-    public static boolean signUp(int userType){
+    public static void createAccount(int userType){
         SignUp signup = new SignUp();
 
-        return signup.createAccount(userType);
+        signup.createAccount(userType);
     }
 }
