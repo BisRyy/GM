@@ -39,51 +39,70 @@
 
     
   
-    <form>
-        <div>
+   <form >
+        <div align="center">
           <h1>Register</h1>
           <p>Kindly fill in this form to register.</p>
           <label for="username"><b>Username</b></label>
-          <input
+          <p>
+            <input
             type="text"
             placeholder="Enter username"
             name="username"
             id="username"
             required
-          /><br>
-  
+          />
+          </p>
+          
+        </div>
+
+        <div align="center">
           <label for="email"><b>Email</b></label>
-          <input
+          <p>
+            <input
             type="text"
             placeholder="Enter Email"
             name="email"
             id="email"
             required
-          /><br>
-  
+          />
+          </p>
+          
+        </div>
+
+        <div align="center">
           <label for="pwd"><b>Password</b></label>
-          <input
+          <p>
+            <input
             type="password"
             placeholder="Enter Password"
             name="pwd"
             id="pwd"
             required
-          /><br>
-  
+          />
+          </p>
+          
+        </div>
+
+        <div align="center">
           <label for="pwd-repeat"><b>Repeat Password</b></label>
+         <p>
           <input
-            type="password"
-            placeholder="Repeat Password"
-            name="pwd-repeat"
-            id="pwd-repeat"
-            required
-          /><br>
-  
-          <button type="submit">Register</button>
+          type="password"
+          placeholder="Repeat Password"
+          name="pwd-repeat"
+          id="pwd-repeat"
+          required
+        />
+         </p>
+        </div>
+
+        <div align="center">
+          <button type="submit"; style=" color: white; background-color: Green"> Register</button>
         </div>
        
         <!-- the # must ideally be replaced by the login page URL in the next div -->
-        <div>
+        <div align="center">
           <p>Already have an account? <a href="#">Log in</a>.</p>
         </div>
       </form>
