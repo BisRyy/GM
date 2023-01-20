@@ -12,7 +12,7 @@ public class SignUp {
     private Scanner input;
 
 
-    public void createAccount(int type){
+    public boolean createAccount(int type){
         if( type == 1 || type == 2){
             this.type = type;
             input = new Scanner(System.in);
@@ -21,6 +21,8 @@ public class SignUp {
         else{
             System.out.println("Invalid Type.");
         }
+
+        return true;
     }
 
     public void fillInfo(){
