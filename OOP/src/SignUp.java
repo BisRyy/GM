@@ -34,9 +34,5 @@ public class SignUp {
         email = input.nextLine();
         System.out.println("Enter your PhoneNumber: ");
         phoneNumber = input.nextLine();
-
-        Random rand =  new Random();
-        int ran = rand.nextInt(0, 100);
-
     }
 }

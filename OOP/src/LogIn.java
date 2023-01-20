@@ -8,6 +8,7 @@ public class LogIn {
 
 
     LogIn(){
+        type = 1;
         getID();
         getPassword();
     }
@@ -21,7 +22,6 @@ public class LogIn {
     }
 
     private void getID() {
-        type = 1;
         System.out.println("Enter your ID: ");
         id = input.nextLine();
     }
@@ -31,7 +31,7 @@ public class LogIn {
         password = input.nextLine();
     }
 
-    private boolean verifyPassword(){
-        return false;
+    boolean verifyPassword(){
+        return true;
     }
 }
