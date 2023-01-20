@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class BuyerMenu {
-    private static Scanner scanner = new Scanner(System.in);
-    public static void buyerMenu(){
+    private final Scanner scanner = new Scanner(System.in);
+    public void buyerMenu( Buyer buyer) {
         while(true){
             System.out.println("Welcome to the GM!");
             System.out.println("1. Search");
@@ -14,8 +14,8 @@ public class BuyerMenu {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1 -> System.out.println("Search");
-                case 2 -> System.out.println("View Cart");
+                case 1 -> System.out.println(buyer.getEmail());
+                case 2 -> System.out.println(buyer.getPhoneNumber());
                 case 3 -> System.out.println("View Orders");
                 case 0 -> System.exit(0);
                 default -> System.out.println("Invalid choice");
