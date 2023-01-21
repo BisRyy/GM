@@ -10,13 +10,8 @@ public class MainMenu {
         int menuChoice = AccountMenu.menuChoice(userType);
 
         if (menuChoice == 1) {
-            if(userType == 1){
-                BuyerLogIn buyerLogIn = new BuyerLogIn();
-                buyer = buyerLogIn.logIn();
-            } else if(userType == 2){
-                SellerLogIn sellerLogIn = new SellerLogIn();
-                seller = sellerLogIn.logIn();
-            }
+            createUser(userType);
+            mainMenu(userType);
         } else if (menuChoice == 2) {
             AccountMenu.createAccount(userType);
         } else if (menuChoice == 0) {
@@ -25,7 +20,6 @@ public class MainMenu {
             System.out.println("Invalid choice");
         }
 
-        mainMenu(userType);
     }
 
     private static void mainMenu(int userType) {
@@ -40,6 +34,16 @@ public class MainMenu {
         else {
             AdminMenu adminMenu = new AdminMenu();
             adminMenu.adminMenu();
+        }
+    }
+
+    private static void createUser(int userType) {
+        if(userType == 1){
+            BuyerLogIn buyerLogIn = new BuyerLogIn();
+            buyer = buyerLogIn.logIn();
+        } else if(userType == 2){
+            SellerLogIn sellerLogIn = new SellerLogIn();
+            seller = sellerLogIn.logIn();
         }
     }
 }
