@@ -34,5 +34,7 @@ public class SignUp {
         email = input.nextLine();
         System.out.println("Enter your PhoneNumber: ");
         phoneNumber = input.nextLine();
+
+        System.out.println(">> Account Created Successfully.");
     }
 }
