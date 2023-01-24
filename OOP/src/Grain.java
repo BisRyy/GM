@@ -1,10 +1,10 @@
-class GrainListing {
+class Grain {
     private String grainType;
     private int quantity;
     private double pricePerUnit;
     private String sellerId;
 
-    public GrainListing(String grainType, int quantity, double pricePerUnit, String sellerId) {
+    public Grain(String grainType, int quantity, double pricePerUnit, String sellerId) {
         this.grainType = grainType;
         this.quantity = quantity;
         this.pricePerUnit = pricePerUnit;

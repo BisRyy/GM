@@ -18,9 +18,4 @@ public class AccountMenu {
         return choice;
     }
 
-    public static void createAccount(int userType){
-        SignUp signup = new SignUp();
-
-        signup.createAccount(userType);
-    }
 }

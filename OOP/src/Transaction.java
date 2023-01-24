@@ -1,5 +1,5 @@
 public class Transaction {
-    private String commodity;
+    private Order order;
     private double price;
     private int quantity;
     private String buyer;
@@ -9,10 +9,10 @@ public class Transaction {
     private String contractNumber;
     private boolean isComplete;
 
-    public Transaction(String commodity, double price, int quantity,
+    public Transaction(Order order, double price, int quantity,
                        String buyer, String seller, String deliveryLocation,
                        String deliveryDate, String contractNumber) {
-        this.commodity = commodity;
+        this.order = order;
         this.price = price;
         this.quantity = quantity;
         this.buyer = buyer;
@@ -23,12 +23,8 @@ public class Transaction {
         this.isComplete = false;
     }
 
-    public String getCommodity() {
-        return commodity;
-    }
-
-    public void setCommodity(String commodity) {
-        this.commodity = commodity;
+    public Order getOrder() {
+        return order;
     }
 
     public double getPrice() {

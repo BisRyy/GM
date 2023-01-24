@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 class Market {
-    private List<GrainListing> grainListings;
+    private List<Grain> grains;
     private Map<String, Seller> sellers;
     private Map<String, Buyer> buyers;
     private List<Transaction> transactions;
@@ -12,7 +12,7 @@ class Market {
     private List<Delivery> deliveries;
 
     public Market() {
-        this.grainListings = new ArrayList<>();
+        this.grains = new ArrayList<>();
         this.sellers = new HashMap<>();
         this.buyers = new HashMap<>();
         this.transactions = new ArrayList<>();
@@ -20,17 +20,17 @@ class Market {
         this.deliveries = new ArrayList<>();
     }
 
-    public void addGrainListing(GrainListing grainListing) {
-        this.grainListings.add(grainListing);
+    public void addGrainListing(Grain grain) {
+        this.grains.add(grain);
     }
 
-    public void removeGrainListing(GrainListing grainListing) {
-        this.grainListings.remove(grainListing);
+    public void removeGrainListing(Grain grain) {
+        this.grains.remove(grain);
     }
 
-    public List<GrainListing> searchGrainListings(String grainType, int quantity) {
-        List<GrainListing> results = new ArrayList<>();
-        for (GrainListing listing : grainListings) {
+    public List<Grain> searchGrainListings(String grainType, int quantity) {
+        List<Grain> results = new ArrayList<>();
+        for (Grain listing : grains) {
             if (listing.getGrainType().equals(grainType) && listing.getQuantity() >= quantity) {
                 results.add(listing);
             }

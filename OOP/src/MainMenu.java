@@ -10,10 +10,11 @@ public class MainMenu {
         int menuChoice = AccountMenu.menuChoice(userType);
 
         if (menuChoice == 1) {
-            createUser(userType);
+            userLogin(userType);
             mainMenu(userType);
         } else if (menuChoice == 2) {
-            AccountMenu.createAccount(userType);
+            SignUp signUp = new SignUp();
+            signUp.createAccount(userType);
         } else if (menuChoice == 0) {
             System.exit(0);
         } else {
@@ -37,7 +38,7 @@ public class MainMenu {
         }
     }
 
-    private static void createUser(int userType) {
+    private static void userLogin(int userType) {
         if(userType == 1){
             BuyerLogIn buyerLogIn = new BuyerLogIn();
             buyer = buyerLogIn.logIn();
@@ -45,5 +46,6 @@ public class MainMenu {
             SellerLogIn sellerLogIn = new SellerLogIn();
             seller = sellerLogIn.logIn();
         }
+        System.out.println(">> Login Successful!");
     }
 }

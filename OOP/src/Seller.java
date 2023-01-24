@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Seller extends Person{
-    private List<GrainListing> grainListings;
+    private List<Grain> grains;
 
     public Seller(String id, String name, String address, String email, String phoneNumber) {
         this.id = id;
@@ -10,18 +10,18 @@ class Seller extends Person{
         this.address = address;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.grainListings = new ArrayList<>();
+        this.grains = new ArrayList<>();
     }
 
-    public List<GrainListing> getGrainListings() {
-        return this.grainListings;
+    public List<Grain> getGrainListings() {
+        return this.grains;
     }
 
-    public void addGrainListing(GrainListing grainListing) {
-        this.grainListings.add(grainListing);
+    public void addGrainListing(Grain grain) {
+        this.grains.add(grain);
     }
 
-    public void removeGrainListing(GrainListing grainListing) {
-        this.grainListings.remove(grainListing);
+    public void removeGrainListing(Grain grain) {
+        this.grains.remove(grain);
     }
 }
