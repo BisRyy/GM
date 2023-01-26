@@ -14,11 +14,22 @@ public class BuyerMenu {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1 -> System.out.println(buyer.getEmail());
-                case 2 -> System.out.println(buyer.getPhoneNumber());
-                case 3 -> System.out.println("View Orders");
-                case 0 -> System.exit(0);
-                default -> System.out.println("Invalid choice");
+                
+                case 1 :
+                    System.out.println(buyer.getEmail());
+                    break;
+                case 2 :
+                    System.out.println(buyer.getPhoneNumber());
+                    break;
+                case 3 :
+                    System.out.println("View Orders");
+                    break;
+                case 0 :
+                    System.exit(0);
+                    break;
+                default :
+                    System.out.println("Invalid choice");
+                    break;
             }
         }
     }
