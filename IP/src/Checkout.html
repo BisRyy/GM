@@ -170,7 +170,67 @@
                                 <summary>
                                     <font face="sans-seif" size="5" color="grey">Billing</font>
                                 </summary>
-                            </details><hr> 
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label>Card Type</label><br>
+                                            <select>
+                                                <option value="Select Card Type">Select Card Type</option>
+                                                <option value="Visa">Visa</option>
+                                                <option value="Master Card">Master Card</option>
+                                                <option value="American Express">American Express</option>
+                                                <option value="Discover">Discover</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Card Holder Name</label><br>
+                                            <input type="text">
+                                        </td>
+                                        <td>
+                                            <label>Card Number</label><br>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>CVV</label><br>
+                                            <input type="number">
+                                        </td>
+                                        <td>
+                                            <label>Expiration Date</label><br>
+                                            <input type="date">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Phone Number (optional)</label><br>
+                                            <input type="tel"><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                            <label>Save this information in Saved.</label><br>
+                                            <input type="checkbox">
+                                            <label>My billing address is the same as my shipping address.</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Transaction Comments</label><br>
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <br>
+                                            <input type="submit" value="Continue"><br><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </details><hr>
                         </td>
                     </tr>
                     <tr>
@@ -179,6 +239,42 @@
                                 <summary>
                                     <font face="sans-seif" size="5" color="grey">Payment</font>
                                 </summary>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="Quantity">Quantity: </label><br>
+                                            <input type="number" name="Quantity" id="Quantity" min="1" max="100">
+                                        </td>
+                                        <td>
+                                            Tax: &nbsp; &nbsp; 10%
+                                        </td>
+                                        <td>
+                                            Discount: &nbsp; &nbsp; 10%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="Price">Price: </label><br>
+                                            <input type="text" name="Price" id="Price">
+                                        </td>
+                                        <td>
+                                            <label for="Total">Total: </label><br>
+                                            <input type="text" name="Total" id="Total">
+                                        </td>
+                                    <!-- 
+                                        <td>
+                                            <label for="Grand Total">Grand Total: </label><br>
+                                            <input type="text" name="Grand Total" id="Grand Total">
+                                        </td>
+                                    --> 
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                            <br>
+                                            <input type="submit" value="Continue"><br><br>
+                                        </td>
+                                    </tr>
+                                </table>
                             </details><hr>
                         </td>
                     </tr>
