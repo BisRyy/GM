@@ -6,7 +6,7 @@
 [Project Github](https://github.com/BisRyy/GM/edit/master/SAM) <br>
 [Project Demo](https://gm.bisry.me) <br>
 
-##
+## Diagram Links
 
 -[Data Flow Diagram Level 0](https://lucid.app/lucidchart/1956ae23-175f-4ad4-b9c7-d4899188b143/edit?viewport_loc=100%2C203%2C1480%2C705%2C0_0&invitationId=inv_5cea834f-ff59-446e-a02f-3c7bf5028005)<br>
 -[Data Flow Diagram Level 1](https://lucid.app/lucidchart/4d0166a9-a44c-40eb-a811-8c05a7c8c04b/edit?viewport_loc=-324%2C308%2C2446%2C1166%2C0_0&invitationId=inv_1955b6ae-ee67-4ecc-9da0-890fdf5a3fc9)<br>
